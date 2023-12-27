@@ -1,0 +1,30 @@
+Design a ATM Console.
+
+Program should run until and unless user stops the Program
+4 options on Screen :
+    1. Withdrawal
+    2. Deposit
+    3. Mini Statement
+    4. Exit
+
+Opening Balance = 20000
+
+After any transactions; balance should be displayed.
+
+Withdrawal:
+    => Amount should be entered in multiple of 100. 
+    => Withdrawal amt < Balance
+    => If Withdrawal > 10000; it should ask for otp
+        OTP should be exactly of 4 digits
+
+Deposit:
+    => User should tell whcih notes he is giving (100, 200, 500)
+    => Total Amt to deposit should also be told by user and has to be multiple of 100
+    => Check if notes*num_of_notes matches the total amt
+
+Mini Statement:
+    => Display previous 5 transactions.
+    => Eg : +5000, -3500, ...
+
+Exit :
+    => display 'ATM Exited'
