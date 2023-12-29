@@ -1,0 +1,16 @@
+1. Print odd numbers in given range
+2. Print n odd numbers
+3. print Multiplication table with dynamic input
+4. Print factorial of a number and its numbers
+5. Print sum of n numbers
+6. Print following Pattern:
+   *
+   **
+   ***
+   ****
+   *****
+7. Print following Pattern:
+   ****
+   ***
+   **
+   *
