@@ -14,3 +14,18 @@
    ***
    **
    *
+8. Print following Pattern:
+   ****
+    ***
+     **
+      *
+9. print following Pattern:
+      *
+     **
+    ***
+   ****
+10. Print following Pattern:
+     *   
+    * *  
+   * * * 
+  * * * *
