@@ -1,0 +1,4 @@
+USING FUNCTIONS --->
+
+1. Simple Calculator 
+2. Find average of given numbers

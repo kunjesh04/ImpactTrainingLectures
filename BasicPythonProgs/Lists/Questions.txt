@@ -6,9 +6,16 @@
 6. Add and delete value in given list
 
 <Matrix>
-
 7. Find transpose of matrix (static)
 8. Find sum of two matrices (static)
 9. concatenate the values
 10. Vertically and Horizontally add the elements of matrix
 11. Perform Matrix Multiplication
+
+<Sorting Lists>
+12. Perform Bubble Sort on list
+13. Perform Insertion Sort on list
+
+<Searching>
+14. Perform Linear Search on a list
+15. Perform Binary Search on a list
