@@ -1,5 +1,3 @@
-# UNSOLVED
-
 Students = {
     'Student1' : {
         'Subject 1' : {
@@ -54,23 +52,16 @@ Students = {
     }
 }
 
-for student in Students.keys():
-    print(student)
-    subject_scores_dict = Students[student]
-    print(subject_scores_dict)
-    subj_keys = subject_scores_dict.keys()
+for student, subjects in Students.items():
     theory_marks = []
     lab_marks = []
     asg_marks = []
-    print(subj_keys)
-    for subject in subj_keys:
-        marks_dict = subj_keys[subject]
-        for sub in marks_dict:  
-            theory_marks.append(sub['T'])
-            lab_marks.append(sub['L'])
-            asg_marks.append(sub['A'])
+    for subject, marks in subjects.items(): 
+        theory_marks.append(marks['T'])
+        lab_marks.append(marks['L'])
+        asg_marks.append(marks['A'])
 
     #  Score = 60% of T + 30% of L + 10% of A
     score = ((0.6*(sum(theory_marks)/300)) + (0.3*(sum(lab_marks)/300)) + (0.1*(sum(asg_marks)/300)))*100
     score = round(score, 2)
-    print(f'Score of {student} = {score}')
+    print(f'Score of {student} = {score} %')
