@@ -1,0 +1,4 @@
+1. Take input for keys and values. Remove some key/values and sort the remaining items in dictionary
+2. Find the percentage of student with respect to 3 marks per 3 subjects
+3. Do same as Q2 but for multiple students
+4. Merge two dictionaries

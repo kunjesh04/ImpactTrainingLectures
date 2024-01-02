@@ -1,0 +1,7 @@
+1. Initialize the string, take input and print them individually.
+2. Check if a string is palindrome or not.
+3. Check if a substring is available in the main string
+4. Find length of string without using in-built function
+5. Check if there is any special character in the given string
+6. Find permutation for a given string
+7. Join and split the given string
