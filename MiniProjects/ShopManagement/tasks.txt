@@ -1,0 +1,28 @@
+1. Inventory
+2. Search by Id
+3. Search by Name
+4. Buy from Vendor
+5. Sell to Customer
+6. Stop the Program
+---------------------------------
+Id : 1001 (given from user)
+Name : Rice (given from user)
+Qty : x Units
+Price : ₹100/unit
+--------------------------------
+Inventory should be empty at first
+Buy from Vendor
+Sell to customers and reduce the qty in Inventory
+Display bill for each item bought.
+--------------------------------
+
+Logic : 
+
+Display the 6 options in the Program, which are repeated until you stop the Program
+Inventory will be empty at first. 
+->Buy from Vendor; you'll need all 4 details.
+->Sell to customer:
+    When user gives name; he will be displayed its id, name, price per unit and qty available.
+    Then user will enter the amount to buy.
+-> Search :
+    Display id, qty, price.
