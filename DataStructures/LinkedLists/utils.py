@@ -50,6 +50,20 @@ class LinkedList:
                 curr_node.next = new_node
             else:
                 print('Index Not Present')
+    
+    def insertAfterData(self, ins_data, after_data):
+        new_node = Node(ins_data)
+        curr_node = self.head
+        while(curr_node != None and curr_node.data != after_data):
+            curr_node = curr_node.next
+        
+        if curr_node is None:  # Target data not found
+            print('Data Not Present')
+            return
+        
+        new_node.next = curr_node.next
+        curr_node.next = new_node
+    
             
     def removeFirstNode(self):
         if self.head == None:
@@ -63,4 +77,44 @@ class LinkedList:
         while (curr_node.next.next):
             curr_node = curr_node.next
         
-        curr_node.next = None    
+        curr_node.next = None
+    
+    def removeNodeIndex(self, index):
+        if self.head == None:
+            return
+        
+        curr_node = self.head
+        position = 0
+        
+        if position == index:
+            self.removeFirstNode()
+        else:
+            while(curr_node != None and position+1 != index):
+                position += 1
+                curr_node = curr_node.next
+            
+            if curr_node.next != None:
+                curr_node.next = curr_node.next.next
+            else:
+                print('Index Not Present')
+                
+    def sizeOfLL(self):
+        count = 0
+        if self.head == None:
+            return count 
+        curr_node = self.head
+        while (curr_node.next):
+            count += 1
+            curr_node = curr_node.next
+        count += 1 # For last node
+        return count
+    
+    def getLinkedListAsList(self):
+        llist = []
+        curr_node = self.head
+        while curr_node.next:
+            llist.append(curr_node.data)
+            curr_node = curr_node.next
+        return llist
+    
+    
