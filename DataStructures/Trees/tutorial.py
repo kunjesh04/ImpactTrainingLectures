@@ -24,4 +24,24 @@ bst.insert(5)
 bst.insert(25)
 bst.insert(20)
 
+print('Inorder Traversal of Tree : ')
 bst.printInorder(bst.root)
+print('')
+
+presence_of_25 = bst.isInTree(25)
+if presence_of_25:
+    print('25 is present')
+else:
+    print('25 is absent')
+
+presence_of_1000 = bst.isInTree(1000)
+if presence_of_1000:
+    print('1000 is present')
+else:
+    print('1000 is absent')
+
+del_data = bst.deleteNode(bst.root, 25)
+print('Tree After Deletion : ')
+bst.printInorder(bst.root)
+print('')
+
