@@ -117,4 +117,15 @@ class LinkedList:
             curr_node = curr_node.next
         return llist
     
+    def reverse(self):
+        prev=None
+        next=None
+        curr=self.head
+        while(curr):
+            next=curr.next
+            curr.next=prev
+            prev = curr
+            curr = next
+        return prev
+
     

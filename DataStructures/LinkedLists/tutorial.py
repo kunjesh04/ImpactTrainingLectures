@@ -32,3 +32,6 @@ print(LL.sizeOfLL())
 linked = LL.getLinkedListAsList()
 print(linked)
 print(type(linked))
+
+rev_LL = LL.reverse()
+print(rev_LL)
