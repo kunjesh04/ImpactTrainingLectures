@@ -108,4 +108,12 @@ class BinarySearchTree:
             temp = current.left
             del current
             return temp
-        
+
+
+class AVLTree:
+    def __init__(self):
+        self.root = None
+    
+    def new_node(data):
+        new = Node(data=data)
+    
